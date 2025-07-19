@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .sec5{
     display: flex;
     flex-direction: column;
@@ -69,4 +70,77 @@ width: 50px;
    
 
 }
+=======
+.sec5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-top: 130px;
+    height: 60vh;
+    justify-content: end;
+}
+.sec-5-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-5-1>:nth-child(1){
+    font-weight: 600;
+}
+.sec-5-2{
+    display: flex;
+    flex-direction: row;
+    grid-row: 2;
+    gap: 30px;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+.a1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.a1 img{
+width: 50px;
+}
+.a2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.a2 img{
+    width: 30px;
+}
+.a1 span ,.a2 span,.a3 span,.a4 span{
+    font-weight: 600;
+    align-items: center;
+}
+.a3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.a3 img{
+    width: 30px;
+}
+.a4{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.a4 img{
+    width: 30px;
+}
+@media(max-width:767px){
+.sec-5-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+   
+
+}
+>>>>>>> 510ea99a5153cc2c0b9f951642211871e2210f63
 }
