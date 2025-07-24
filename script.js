@@ -1,4 +1,48 @@
- document.addEventListener('DOMContentLoaded', function() {
+ // Typewriter Effect
+function initTypewriter() {
+    const textElement = document.querySelector('.typewriter-text');
+    const cursor = document.querySelector('.cursor');
+    const words = ['Frontend Developer', 'UI/UX Designer', 'Editor'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 70; // Faster typing speed
+    let deletingSpeed = 30; // Faster deleting speed
+    let delayBetweenWords = 800; // Shorter delay between words
+
+    function type() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            // Delete character
+            textElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = deletingSpeed;
+        } else {
+            // Type character
+            textElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 150;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            // Word is typed completely, wait and start deleting
+            typingSpeed = delayBetweenWords;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            // Word is deleted, move to next word
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+
+        setTimeout(type, typingSpeed);
+    }
+
+    // Start the typewriter effect
+    setTimeout(type, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
     // Select elements
     const hamburger = document.querySelector('.hamburger');
     const menuBar = document.querySelector('.navbar-menu .menu-bar');
@@ -40,4 +84,7 @@
             closeMenu();
         }
     });
+    
+    // Initialize typewriter effect
+    initTypewriter();
 });
