@@ -255,6 +255,54 @@
   <span>Get in Touch</span>
   <h1>Contact Me</h1>
 </div>
+
+<!-- send messagae-->
+<style>
+
+</style>
+
+<div>
+  <div class="form-container">
+    <div class="form-header">
+      <p>Graduate student available for opportunities and collaboration.</p>
+    </div>
+    
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="a006f494-e9dd-418a-a76f-c28d52f8e57b"> 
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <span class="error">Please enter your full name</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <span class="error">Please enter a valid email address</span>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="message--subject" placeholder="Research Collaboration, Project Inquiry, etc." required>
+        <span class="error">Please enter a subject</span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Share your thoughts, questions, or opportunities..." required></textarea>
+        <span class="error">Please enter your message</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      
+      <div class="success-message" id="successMessage">
+        ✓ Thank you for reaching out! I'll respond to your message soon.
+      </div>
+    </form>
+  </div>
+</div>
+
+
 <div class="sec-5-2">
 <a class="a1" href="mailto:madhukuruva20@gmail.com"><img src="assets/email.gif" alt=""><span class="email">Email</span></a>
 <a class="a2" href="https://www.linkedin.com/in/madhukuruva9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/linked in.gif" alt=""><span>LinkedIn</span></a>
