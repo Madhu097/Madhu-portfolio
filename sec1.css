@@ -21,6 +21,7 @@
     flex-direction: column;
     gap: 15px;
 }
+    
 .sec-1-2-1{
 font-weight: 600;
 font-size: 25px;
@@ -28,6 +29,9 @@ font-size: 25px;
 h1{
     font-size: 50px;
     columns: darkorange;
+        font-family: 'IM Fell Great Primer SC', serif;
+
+
 }
 .sec-1-2-3{
 font-weight: 600;

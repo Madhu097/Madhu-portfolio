@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -41,7 +42,8 @@ a:hover{
   width: 40%;
   font-size: 30px;
   font-weight: 700;
-  color:darkorange
+  color:darkorange;
+
 }
 .menu-bar{
   width: 60%;
